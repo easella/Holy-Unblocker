@@ -1,0 +1,25 @@
+name: Deploy to Cloudflare Workers
+
+on:
+  push:
+    branches:
+      - master
+  repository_dispatch:
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    name: Build & Deploy
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: "12.x"
+      - run: npm install
+      - name: Publish
+        uses: cloudflare/wrangler-action@1.2.0
+        with:
+          apiToken: ${{ ca74b335b6a29f5f13e682cf9470a04405447 }}
+        env:
+          CF_ACCOUNT_ID: ${{v1.0-b0e7edad6cfe40c214d05c1b-8efe9787f5d047ac3d9b49d9e0b2217c0d2bb545a34b46be303f99e0a5aba0bd6b2e7222bc2224f9e1c3bb83ee8de26149e5dee3bbd5353b04d8f5869e72e003cf9fadcc9be985b8}}
