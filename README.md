@@ -10,6 +10,9 @@ Holy Unblocker, an official flagship Titanium Network site, can bypass web filte
 Works with a large number of sites, including YouTube, Discord, and more! 
 
 Read below for information if the official site is blocked or for obtaining more links.
+[![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/easella/Holy-Unblocker)
+
+## Usage
 
 #### Supports
 - Youtube.com
