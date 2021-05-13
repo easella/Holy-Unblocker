@@ -20,7 +20,7 @@ $('buttonstealth').onclick = function() {
     frame.style['visibility'] = "visible";
     frame.setAttribute('allow', 'fullscreen');
     frame.setAttribute('sandbox', 'allow-same-origin allow-scripts allow-popups allow-forms');
-    document.cookie = 'oldsmobile=badcar; expires=' + (Date.now() + 259200) + '; SameSite=Lax; domain=.' + auth + '; path=/; Secure;';
+    document.cookie = 'oldsmobile=badcar; expires=' + (Date.now() + 259200) + '; SameSite=Lax; domain=.' +  '; path=/; Secure;';
     document.getElementById('frame').contentWindow.focus();
     return false;
 };
@@ -34,7 +34,7 @@ $('buttonclassic').onclick = function() {
         console.log(url);
     } else url = btoa(url)
     window.location.href = "https://subdomain." + domain + "/path/" + url;
-    document.cookie = 'oldsmobile=badcar; expires=' + (Date.now() + 259200) + '; SameSite=Lax; domain=.' + auth + '; path=/; Secure;';
+    document.cookie = 'oldsmobile=badcar; expires=' + (Date.now() + 259200) + '; SameSite=Lax; domain=.' + '; path=/; Secure;';
     return false;
 };
 //AL
@@ -50,7 +50,7 @@ $('al').onclick = function() {
     frame.style['visibility'] = "visible";
     frame.setAttribute('allow', 'fullscreen');
     frame.setAttribute('sandbox', 'allow-same-origin allow-scripts allow-popups allow-forms');
-    document.cookie = 'oldsmobile=badcar; expires=' + (Date.now() + 259200) + '; SameSite=Lax; domain=.' + auth + '; path=/; Secure;';
+    document.cookie = 'oldsmobile=badcar; expires=' + (Date.now() + 259200) + '; SameSite=Lax; domain=.' + '; path=/; Secure;';
     document.getElementById('frame').contentWindow.focus();
     return false;
 };
@@ -62,7 +62,7 @@ $('albp').onclick = function() {
     else if (url.startsWith('//')) url = 'http:' + url;
     else url = 'http://' + url;
     window.location.href = "https://" + domain + "/fetch/" + btoa(url);
-    document.cookie = 'oldsmobile=badcar; expires=' + (Date.now() + 259200) + '; SameSite=Lax; domain=.' + auth + '; path=/; Secure;';
+    document.cookie = 'oldsmobile=badcar; expires=' + (Date.now() + 259200) + '; SameSite=Lax; domain=.'  + '; path=/; Secure;';
     return false;
 };
 //NU
@@ -75,7 +75,7 @@ $('wn').onclick = function() {
     frame.style['visibility'] = "visible";
     frame.setAttribute('allow', 'fullscreen');
     frame.setAttribute('sandbox', 'allow-same-origin allow-scripts allow-popups allow-forms');
-    document.cookie = 'wnauth=a; expires=' + (Date.now() + 259200) + '; SameSite=None; domain=.' + auth + '; path=/; Secure;';
+    document.cookie = 'wnauth=a; expires=' + (Date.now() + 259200) + '; SameSite=None; domain=.' + '; path=/; Secure;';
     return false;
 };
 $('wnbp').onclick = function() {
@@ -84,7 +84,7 @@ $('wnbp').onclick = function() {
     var det = document.domain;
     var domain = det.replace('www.', '').split(/[/?#]/)[0];
     window.location.href = "https://a." + domain + "/main/" + url;
-    document.cookie = 'wnauth=a; expires=' + (Date.now() + 259200) + '; SameSite=None; domain=.' + auth + '; path=/; Secure;';
+    document.cookie = 'wnauth=a; expires=' + (Date.now() + 259200) + '; SameSite=None; domain=.'  + '; path=/; Secure;';
     return false;
 };
 //PD
@@ -97,7 +97,7 @@ $('pdprox').onclick = function() {
     frame.style['visibility'] = "visible";
     frame.setAttribute('allow', 'fullscreen');
     frame.setAttribute('sandbox', 'allow-same-origin allow-scripts allow-popups allow-forms');
-    document.cookie = 'oldsmobile=badcar; expires=' + (Date.now() + 259200) + '; SameSite=Lax; domain=.' + auth + '; path=/; Secure;';
+    document.cookie = 'oldsmobile=badcar; expires=' + (Date.now() + 259200) + '; SameSite=Lax; domain=.'  + '; path=/; Secure;';
     return false;
 };
 $('pdproxbp').onclick = function() {
@@ -105,7 +105,7 @@ $('pdproxbp').onclick = function() {
     var det = document.domain;
     var domain = det.replace('www.', '').split(/[/?#]/)[0];
     window.location.href = "https://cdn." + domain + "/" + url;
-    document.cookie = 'oldsmobile=badcar; expires=' + (Date.now() + 259200) + '; SameSite=Lax; domain=.' + auth + '; path=/; Secure;';
+    document.cookie = 'oldsmobile=badcar; expires=' + (Date.now() + 259200) + '; SameSite=Lax; domain=.'  + '; path=/; Secure;';
     return false;
 };
 //PM Load
@@ -122,7 +122,7 @@ $('pmprox').onclick = function() {
     frame.style['visibility'] = "visible";
     frame.setAttribute('allow', 'fullscreen');
     frame.setAttribute('sandbox', 'allow-same-origin allow-scripts allow-popups allow-forms');
-    document.cookie = 'oldsmobile=1; expires=' + (Date.now() + 259200) + '; SameSite=Lax; domain=.' + auth + '; path=/; Secure;';
+    document.cookie = 'oldsmobile=1; expires=' + (Date.now() + 259200) + '; SameSite=Lax; domain=.' + '; path=/; Secure;';
     document.getElementById("frame").style.visiblity = "visible";
     return false;
 };
@@ -135,7 +135,7 @@ $('pmproxbp').onclick = function() {
         url = ('http://' + url[0] + '/' + url.slice(1).join('/'));
     }
     window.location.href = "https://c." + domain + "/prox?url=" + url;
-    document.cookie = 'oldsmobile=1; expires=' + (Date.now() + 259200) + '; SameSite=Lax; domain=.' + auth + '; path=/; Secure;';
+    document.cookie = 'oldsmobile=1; expires=' + (Date.now() + 259200) + '; SameSite=Lax; domain=.'  + '; path=/; Secure;';
     document.getElementById("frame").style.visiblity = "visible";
     return false;
 };
@@ -149,7 +149,7 @@ $('wndp').onclick = function() {
     frame.style['visibility'] = "visible";
     frame.setAttribute('allow', 'fullscreen');
     frame.setAttribute('sandbox', 'allow-same-origin allow-scripts allow-popups allow-forms');
-    document.cookie = 'oldsmobile=badcar; expires=' + (Date.now() + 259200) + '; SameSite=Lax; domain=.' + auth + '; path=/; Secure;';
+    document.cookie = 'oldsmobile=badcar; expires=' + (Date.now() + 259200) + '; SameSite=Lax; domain=.'  + '; path=/; Secure;';
     return false;
 };
 $('wndpbp').onclick = function() {
@@ -158,7 +158,7 @@ $('wndpbp').onclick = function() {
     var det = document.domain;
     var domain = det.replace('www.', '').split(/[/?#]/)[0];
     window.location.href = "https://a." + domain + "/main/" + origin;
-    document.cookie = 'oldsmobile=badcar; expires=' + (Date.now() + 259200) + '; SameSite=Lax; domain=.' + auth + '; path=/; Secure;';
+    document.cookie = 'oldsmobile=badcar; expires=' + (Date.now() + 259200) + '; SameSite=Lax; domain=.'  + '; path=/; Secure;';
     return false;
 };
 //YT
@@ -172,7 +172,7 @@ $('ytbtn').onclick = function() {
     frame.style['visibility'] = "visible";
     frame.setAttribute('allow', 'fullscreen');
     frame.setAttribute('sandbox', 'allow-same-origin allow-scripts allow-popups allow-forms');
-    document.cookie = 'oldsmobile=badcar; expires=' + (Date.now() + 259200) + '; SameSite=Lax; domain=.' + auth + '; path=/; Secure;';
+    document.cookie = 'oldsmobile=badcar; expires=' + (Date.now() + 259200) + '; SameSite=Lax; domain=.'  + '; path=/; Secure;';
     return false;
 };
 $('ytbtnm').onclick = function() {
@@ -185,7 +185,7 @@ $('ytbtnm').onclick = function() {
     frame.style['visibility'] = "visible";
     frame.setAttribute('allow', 'fullscreen');
     frame.setAttribute('sandbox', 'allow-same-origin allow-scripts allow-popups allow-forms');
-    document.cookie = 'oldsmobile=badcar; expires=' + (Date.now() + 259200) + '; SameSite=Lax; domain=.' + auth + '; path=/; Secure;';
+    document.cookie = 'oldsmobile=badcar; expires=' + (Date.now() + 259200) + '; SameSite=Lax; domain=.'  + '; path=/; Secure;';
     return false;
 };
 $('ytbp').onclick = function() {
@@ -195,7 +195,7 @@ $('ytbp').onclick = function() {
     var domain = det.replace('www.', '').split(/[/?#]/)[0];
     const origin = btoa(yt)
     window.location.href = "https://" + domain + "/fetch/" + origin;
-    document.cookie = 'oldsmobile=badcar; expires=' + (Date.now() + 259200) + '; SameSite=Lax; domain=.' + auth + '; path=/; Secure;';
+    document.cookie = 'oldsmobile=badcar; expires=' + (Date.now() + 259200) + '; SameSite=Lax; domain=.'  + '; path=/; Secure;';
     return false;
 };
 //D
@@ -207,7 +207,7 @@ $('dbtn').onclick = function() {
     const origin = btoa(d)
     frame.src = "https://" + domain + "/fetch/" + origin + "/login";
     frame.style['visibility'] = "visible";
-    document.cookie = 'oldsmobile=badcar; expires=' + (Date.now() + 259200) + '; SameSite=Lax; domain=.' + auth + '; path=/; Secure;';
+    document.cookie = 'oldsmobile=badcar; expires=' + (Date.now() + 259200) + '; SameSite=Lax; domain=.'  + '; path=/; Secure;';
     return false;
 };
 $('docean').onclick = function() {
@@ -216,7 +216,7 @@ $('docean').onclick = function() {
     var domain = det.replace('www.', '').split(/[/?#]/)[0];
     frame.src = "https://d." + domain + "/login";
     frame.style['visibility'] = "visible";
-    document.cookie = 'oldsmobile=badcar; expires=' + (Date.now() + 259200) + '; SameSite=Lax; domain=.' + auth + '; path=/; Secure;';
+    document.cookie = 'oldsmobile=badcar; expires=' + (Date.now() + 259200) + '; SameSite=Lax; domain=.' + '; path=/; Secure;';
     return false;
 };
 $('dbp').onclick = function() {
@@ -225,7 +225,7 @@ $('dbp').onclick = function() {
     var domain = det.replace('www.', '').split(/[/?#]/)[0];
     const origin = btoa(d)
     window.location.href = "https://" + domain + "/fetch/" + origin + "/login";
-    document.cookie = 'oldsmobile=badcar; expires=' + (Date.now() + 259200) + '; SameSite=Lax; domain=.' + auth + '; path=/; Secure;';
+    document.cookie = 'oldsmobile=badcar; expires=' + (Date.now() + 259200) + '; SameSite=Lax; domain=.'  + '; path=/; Secure;';
     return false;
 };
 //CH
@@ -238,7 +238,7 @@ $('ch').onclick = function() {
     frame.style['visibility'] = "visible";
     frame.setAttribute('allow', 'fullscreen');
     frame.setAttribute('sandbox', 'allow-same-origin allow-scripts allow-popups allow-forms');
-    document.cookie = 'oldsmobile=badcar; expires=' + (Date.now() + 259200) + '; SameSite=Lax; domain=.' + auth + '; path=/; Secure;';
+    document.cookie = 'oldsmobile=badcar; expires=' + (Date.now() + 259200) + '; SameSite=Lax; domain=.'  + '; path=/; Secure;';
     return false;
 };
 //GP (Developmental Addition)
@@ -251,7 +251,7 @@ $('gp').onclick = function() {
     frame.style['visibility'] = "visible";
     frame.setAttribute('allow', 'fullscreen');
     frame.setAttribute('sandbox', 'allow-same-origin allow-scripts allow-popups allow-forms');
-    document.cookie = 'oldsmobile=badcar; expires=' + (Date.now() + 259200) + '; SameSite=Lax; domain=.' + auth + '; path=/; Secure;';
+    document.cookie = 'oldsmobile=badcar; expires=' + (Date.now() + 259200) + '; SameSite=Lax; domain=.'  + '; path=/; Secure;';
     return false;
 };
 
